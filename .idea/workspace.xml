@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a2e1d81d-9fad-4b24-b237-c0f334769d63" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/binance/futures_websockets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/binance/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/binance/client.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ZFDoiC5OYMgcF3CgJIFxK4Ebco" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/binance" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\python-binance\binance" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a2e1d81d-9fad-4b24-b237-c0f334769d63" name="Default Changelist" comment="" />
+      <created>1584426124309</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584426124309</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1095" y="410" key="RollbackChangesDialog" timestamp="1584427430923">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1095" y="410" key="RollbackChangesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1584427430923" />
+    <state x="781" y="342" key="SettingsEditor" timestamp="1584426197163">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="781" y="342" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1584426197163" />
+  </component>
+</project>

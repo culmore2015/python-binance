@@ -10,7 +10,6 @@ from .exceptions import BinanceAPIException, BinanceRequestException, BinanceWit
 
 
 class Client(object):
-
     API_URL = 'https://api.binance.{}/api'
     WITHDRAW_API_URL = 'https://api.binance.{}/wapi'
     MARGIN_API_URL = 'https://api.binance.{}/sapi'
@@ -103,6 +102,7 @@ class Client(object):
 
         # init DNS and SSL cert
         self.ping()
+        self.futures_ping()
 
     def _init_session(self):
 
@@ -172,7 +172,7 @@ class Client(object):
             if 'requests_params' in kwargs['data']:
                 # merge requests params into kwargs
                 kwargs.update(kwargs['data']['requests_params'])
-                del(kwargs['data']['requests_params'])
+                del (kwargs['data']['requests_params'])
 
         if signed:
             # generate signature
@@ -191,7 +191,7 @@ class Client(object):
         # if get request assign data array to params value for requests lib
         if data and (method == 'get' or force_params):
             kwargs['params'] = '&'.join('%s=%s' % (data[0], data[1]) for data in kwargs['data'])
-            del(kwargs['data'])
+            del (kwargs['data'])
 
         self.response = getattr(self.session, method)(uri, **kwargs)
         return self._handle_response()
@@ -3702,3 +3702,31 @@ class Client(object):
 
         """
         return self._request_futures_api('get', 'income', True, data=params)
+
+    def transfer_spot_to_futures(self, **params):
+        """Get future account transaction history list
+
+                https://binance-docs.github.io/apidocs/futures/cn/#1045de04a1
+
+                """
+        params['type'] = 1
+        return self._request_margin_api('post', 'futures/transfer', True, data=params)
+
+    def transfer_futures_to_spot(self, **params):
+        """Get future account transaction history list
+
+                https://binance-docs.github.io/apidocs/futures/cn/#1045de04a1
+
+                """
+        params['type'] = 2
+        return self._request_margin_api('post', 'futures/transfer', True, data=params)
+
+    def futures_stream_get_listen_key(self):
+        res = self._request_futures_api('post', 'userDataStream', True, data={})
+        return res['listenKey']
+
+    def futures_stream_keepalive(self, listenKey):
+        params = {
+            'listenKey': listenKey
+        }
+        return self._request_futures_api('put', 'userDataStream', False, data=params)
