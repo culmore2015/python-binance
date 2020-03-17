@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2e1d81d-9fad-4b24-b237-c0f334769d63" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/binance/futures_websockets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/binance/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/binance/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
