@@ -3722,7 +3722,7 @@ class Client(object):
         return self._request_margin_api('post', 'futures/transfer', True, data=params)
 
     def futures_stream_get_listen_key(self):
-        res = self._request_futures_api('post', 'userDataStream', True, data={})
+        res = self._request_futures_api('post', 'listenKey', True, data={})
         return res['listenKey']
 
     def futures_stream_keepalive(self, listenKey):
